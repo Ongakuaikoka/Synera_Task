@@ -8,9 +8,9 @@ from uuid import UUID, uuid4
 from fastapi import APIRouter, WebSocket, HTTPException, status
 from starlette.websockets import WebSocketDisconnect
 
-from infrastructure.llm_client import invoke_llm
-from schemas.messages import MessageRequest, MessageHistoryResponse, Message
-from schemas.conversations import (
+from ..infrastructure.llm_client import invoke_llm
+from ..schemas.messages import MessageRequest, MessageHistoryResponse, Message
+from ..schemas.conversations import (
     ConversationCreateResponse,
     ConversationsResponse,
     ConversationSummary,
