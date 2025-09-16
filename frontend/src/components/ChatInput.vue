@@ -37,14 +37,15 @@ const submitBtnClasses = computed(() =>
       :disabled="isLoading"
       class="flex-1 min-w-0"
     ></textarea>
-    <div
+    <button 
+      type="button"
       @click="onSubmit"
       class="w-18 flex items-center justify-center text-white rounded-lg flex-shrink-0"
       :class="submitBtnClasses"
     >
       <ArrowPathIcon v-if="isLoading" class="w-8 animate-spin" />
       <PaperAirplaneIcon v-else class="w-8" />
-    </div>
+    </button>
   </div>
 </template>
 
